@@ -2,12 +2,12 @@
 #include<stdlib.h>
 int main(){
 	int i = 0;
-	char c[25] = {"folk"};
+	char c[25] = "folk";
 	char *p;
 	p=c;
 	while(1){
-		if(p[i] == '\0')break;
-		i++;
+		if(p == '\0')break;
+		p++;
 	}
 	printf("%d",*p);
 }
