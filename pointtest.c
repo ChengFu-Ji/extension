@@ -18,5 +18,7 @@ int main()
 	
 	printf("%s\n",i);   
 
+	free(i);	
+
 	return 0;
 }
