@@ -1,4 +1,4 @@
-/**¦î¦C¥[¤J©M§R°£**/ 
+/**ä½‡åˆ—åŠ å…¥å’Œåˆªé™¤**/ 
 #include<stdio.h> 
 #include<stdlib.h> 
 #define MAX 10 
@@ -12,43 +12,43 @@ void add()
 {
 	if(front<=rear) //0~9
 	{
-		printf("¿é¤J­n·s¼W¤§¸ê®Æ\n\n"); 
+		printf("è¼¸å…¥è¦æ–°å¢žä¹‹è³‡æ–™\n\n"); 
 		gets(item[front]);
 		front++;
 	}
 	else
-		printf("¨S¦³ªÅ¶¡\n\n");	
+		printf("æ²’æœ‰ç©ºé–“\n\n");	
 }
 
-void dele()
+void del()
 {
 	if(front<=0)
-		printf("¨S¦³¸ê®Æ\n");
+		printf("æ²’æœ‰è³‡æ–™\n");
 	else	
 	{
 		front--;
-		printf("¸ê®Æ '%s' ¤w³Q§R°£\n",item[front]);
+		printf("è³‡æ–™ '%s' å·²è¢«åˆªé™¤\n",item[front]);
 	}
 }
 
 void list()
 {
 	int n=1;
-	printf("--------¦Cªí----------\n");
+	printf("--------åˆ—è¡¨----------\n");
 	for(i = 0; i <= front-1 ; i++) 
 	{
-		printf("²Ä %d µ§¸ê®Æ %s\n",n,item[i]);
+		printf("ç¬¬ %d ç­†è³‡æ–™ %s\n",n,item[i]);
 		n++;
 	}
 	printf("----------------------\n\n");
 } 
  
 int main()
-{
+	int option;
 	while(1)
 	{
-		printf("(1)·s¼W¸ê®Æ (2)§R°£¸ê®Æ\n\n");
-		int option=getch();
+		printf("(1)æ–°å¢žè³‡æ–™ (2)åˆªé™¤è³‡æ–™\n\n");
+		option=getch();
 		switch(option)
 			{
 			case '1':
@@ -56,7 +56,7 @@ int main()
 				list(); 
 				break;
 			case '2':
-				dele();
+				del();
 				break;
 			default:
 				printf("error\n");
