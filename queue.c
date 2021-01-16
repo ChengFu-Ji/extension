@@ -6,7 +6,6 @@
 int front = 0;	
 int rear = MAX-1; 
 char item [MAX][20];
-int i;
  
 void add()
 {
@@ -35,7 +34,7 @@ void list()
 {
 	int n=1;
 	printf("--------列表----------\n");
-	for(i = 0; i <= front-1 ; i++) 
+	for(int i = 0; i <= front-1 ; i++) 
 	{
 		printf("第 %d 筆資料 %s\n",n,item[i]);
 		n++;
