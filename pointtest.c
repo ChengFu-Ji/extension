@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main()
-{
+{   
     char *i,*y;
 	char a[5]="what"; 
 	int z=0;
